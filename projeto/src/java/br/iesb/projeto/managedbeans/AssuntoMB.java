@@ -24,7 +24,7 @@ public class AssuntoMB implements Serializable {
         return assunto;
     }
 
-    public void setAssunto(Assunto assunto) {
+    public void setTipoAssunto(Assunto assunto) {
         this.assunto = assunto;
     }
 

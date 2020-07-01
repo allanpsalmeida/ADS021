@@ -58,7 +58,7 @@ public class Assunto implements Serializable {
         return tipoAssunto;
     }
 
-    public void setAssunto(String tipoAssunto) {
+    public void setTipoAssunto(String tipoAssunto) {
         this.tipoAssunto = tipoAssunto;
     }
 
@@ -67,7 +67,7 @@ public class Assunto implements Serializable {
     }
 
     public void setSituacao(String situacao) {
-        this.situacao = DatatypeConverter.printHexBinary(situacao.getBytes()).toUpperCase();
+        this.situacao = situacao;
     }
 
     @Override
