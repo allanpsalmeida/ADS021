@@ -17,7 +17,7 @@ import javax.xml.bind.DatatypeConverter;
 @NamedQueries({
     @NamedQuery(name = "Assunto.findAll", query = "SELECT u FROM Assunto u")
     , @NamedQuery(name = "Assunto.findById", query = "SELECT u FROM Assunto u WHERE u.id = :id")
-    , @NamedQuery(name = "Assunto.findByAssunto", query = "SELECT u FROM Assunto u WHERE u.Assunto = :Assunto")
+    , @NamedQuery(name = "Assunto.findByTipoAssunto", query = "SELECT u FROM Assunto u WHERE u.tipoAssunto = :tipoAssunto")
     , @NamedQuery(name = "Assunto.findBySituacao", query = "SELECT u FROM Assunto u WHERE u.situacao = :situacao")})
 public class Assunto implements Serializable {
 
