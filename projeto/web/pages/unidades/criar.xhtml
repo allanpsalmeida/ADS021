@@ -1,0 +1,28 @@
+<ui:composition template="/WEB-INF/template/layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="titulo">Processos</ui:define>
+    <ui:define name="conteudo">
+        <p:messages showDetail="false" showSummary="true" autoUpdate="true" />
+        <h:inputHidden id="id" value="#{unidadeMB.unidade.id}"/>
+        <h:panelGrid columns="2">
+            <f:facet name="header">Adicionar Unidades</f:facet>
+            <p:outputLabel value="Nome da Unidade:" for="nomeUnidade" />
+            <p:inputText id="nomeUnidade" value="#{unidadeMB.unidade.nomeUnidade}" title="NomeUnidade"
+                         required="true" requiredMessage="O Nome da Unidade é um campo obrigatório."/>
+            <p:outputLabel value="Sigla da Unidade:" for="siglaUnidade" />
+            <p:password id="senha" value="#{unidadeMB.unidade.siglaUnidade}" title="SiglaUnidade"
+                        required="true" requiredMessage="A Sigla da Unidade é um campo obrigatória."/>
+            <p:outputLabel value="Situação:" for="situacao" />
+            <p:password id="senha" value="#{unidadeMB.unidade.siglaUnidade}" title="SiglaUnidade"
+                        required="true" requiredMessage="A Sigla da Unidade é um campo obrigatória."/>
+            
+            <p:commandButton value="Salvar"
+                             action="#{unidadeMB.salvar(unidadeMB.unidade)}" />
+            <p:link value="Cancelar" outcome="/pages/unidades/listar?faces-redirect=true"/>
+        </h:panelGrid>
+    </ui:define>
+</ui:composition>
