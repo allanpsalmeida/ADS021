@@ -27,8 +27,8 @@ public class Assunto implements Serializable {
     @Basic(optional = false)
     @Column(name = "id")
     private Integer id;
-    @Column(name = "Assunto")
-    private String assunto;
+    @Column(name = "tipoAssunto")
+    private String tipoAssunto;
     @Basic(optional = false)
     @Column(name = "situacao")
     private String situacao;
@@ -40,9 +40,9 @@ public class Assunto implements Serializable {
         this.id = id;
     }
 
-    public Assunto(Integer id, String assunto, String situacao) {
+    public Assunto(Integer id, String tipoAssunto, String situacao) {
         this.id = id;
-        this.assunto = assunto;
+        this.tipoAssunto = tipoAssunto;
         this.situacao = situacao;
     }
 
@@ -54,12 +54,12 @@ public class Assunto implements Serializable {
         this.id = id;
     }
 
-    public String getAssunto() {
-        return assunto;
+    public String getTipoAssunto() {
+        return tipoAssunto;
     }
 
-    public void setASsunto(String assunto) {
-        this.assunto = assunto;
+    public void setAssunto(String tipoAssunto) {
+        this.tipoAssunto = tipoAssunto;
     }
 
     public String getSituacao() {

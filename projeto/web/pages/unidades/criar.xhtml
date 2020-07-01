@@ -14,11 +14,11 @@
             <p:inputText id="nomeUnidade" value="#{unidadeMB.unidade.nomeUnidade}" title="NomeUnidade"
                          required="true" requiredMessage="O Nome da Unidade é um campo obrigatório."/>
             <p:outputLabel value="Sigla da Unidade:" for="siglaUnidade" />
-            <p:inputText id="senha" value="#{unidadeMB.unidade.siglaUnidade}" title="SiglaUnidade"
+            <p:inputText id="siglaUnidade" value="#{unidadeMB.unidade.siglaUnidade}" title="SiglaUnidade"
                         required="true" requiredMessage="A Sigla da Unidade é um campo obrigatória."/>
             <p:outputLabel value="Situação:" for="situacao" />
-            <p:inputText id="senha" value="#{unidadeMB.unidade.siglaUnidade}" title="SiglaUnidade"
-                        required="true" requiredMessage="A Sigla da Unidade é um campo obrigatória."/>
+            <p:inputText id="situacao" value="#{unidadeMB.unidade.situacao}" title="situacao"
+                        required="true" requiredMessage="A Situacao é um campo obrigatória."/>
             
             <p:commandButton value="Salvar"
                              action="#{unidadeMB.salvar(unidadeMB.unidade)}" />

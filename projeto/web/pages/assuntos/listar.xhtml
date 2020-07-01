@@ -11,13 +11,13 @@
         <p:dataTable id="dataTableUsuario" value="#{assuntoMB.lista}" var="assunto"
                      paginator="true" rows="5" paginatorPosition="bottom">
             <f:facet name="header">Lista de Assuntos</f:facet>                
-            <p:column headerText="Nome" sortBy="#{assunto.assunto}">
-                <h:outputText value="#{assunto.assunto}"/>
+            <p:column headerText="Nome" sortBy="#{assunto.tipoAssunto}">
+                <h:outputText value="#{assunto.tipoAssunto}"/>
             </p:column>
             <p:column headerText="Ação">
-                <p:commandLink value="Editar" action="#{assuntoMB.editar(assunto)}" />
+                <p:commandLink value="Editar" action="#{assuntoMB.editar(tipoAssunto)}" />
                 <h:outputText value=" | "/>
-                <p:commandLink value="Remover" action="#{assuntoMB.remover(assunto)}"
+                <p:commandLink value="Remover" action="#{assuntoMB.remover(tipoAssunto)}"
                                update="dataTableUsuario"
                                onstart="return confirm('Deseja remover o assunto?')" />
             </p:column>
