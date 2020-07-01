@@ -3,6 +3,8 @@
   <persistence-unit name="projetoPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <class>br.iesb.projeto.entitybeans.Usuario</class>
+    <class>br.iesb.projeto.entitybeans.Assunto</class>
+    <class>br.iesb.projeto.entitybeans.Unidade</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/projeto?zeroDateTimeBehavior=convertToNull"/>
