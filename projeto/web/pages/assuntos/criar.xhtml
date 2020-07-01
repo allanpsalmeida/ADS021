@@ -14,7 +14,7 @@
             <p:inputText id="assunto" value="#{assuntoMB.assunto.assunto}" title=Assunto"
                          required="true" requiredMessage="O Assunto é um campo obrigatório."/>
             <p:outputLabel value="Situação:" for="senha" />
-            <p:password id="senha" value="#{assuntoMB.assunto.situacao}" title="Situacao"
+            <p:inputText id="situacao" value="#{assuntoMB.assunto.situacao}" title="Situacao"
                         required="true" requiredMessage="A Situacao é um campo obrigatória."/>
             <p:commandButton value="Salvar"
                              action="#{assuntoMB.salvar(assuntoMB.assunto)}" />
